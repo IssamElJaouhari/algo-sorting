@@ -1,0 +1,33 @@
+
+*****************************$*****************************$*****************************$**************
+Objective:
+ 
+-Insertion sort is a simple sorting algorithm that works the way we sort playing cards in our hands. 
+Each time we take a new card we put it in the right place in our hand. 
+
+Instructions:
+-Each time work only with the first i-1 element from of the array  (done✅)
+-Pick element arr[i] and insert it into sorted sequence in the array from 0 to i-1.  (done✅)
+
+*****************************$*****************************$*****************************$**************
+
+
+
+ALGORITHME element_sorting
+
+BEGIN
+
+Insertion_Sort(A):
+    i := 1;
+    for i to length(A) - 1 do
+        key := A[i]
+        j := i - 1
+        while j >= 0 and A[j] > key do
+            A[j+1] := A[j]
+            j := j - 1
+        end while
+        A[j+1] := key
+    end for
+end function
+
+END
